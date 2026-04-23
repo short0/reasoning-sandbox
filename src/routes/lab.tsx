@@ -414,7 +414,7 @@ function LeftPanel({
   compact,
 }: {
   session: Session;
-  setSession: (next: Session | ((p: Session) => Session)) => void;
+  setSession: (next: Session | ((p: Session) => Session), record?: boolean) => void;
   onPresetChange: (id: string) => void;
   onRun: () => void;
   onUndo: () => void;
